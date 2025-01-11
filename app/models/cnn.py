@@ -13,5 +13,8 @@ and how PyTorch tracks computational graphs.
 
 class BasicCNN(nn.Module):
     def __init__(self):
-        self.w00 = 10
         super().__init__()
+
+        self.w00 = 10
+
+        self.conv1 = nn.Conv2d()
