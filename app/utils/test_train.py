@@ -39,7 +39,7 @@ def train(
 
         # Compute prediction error
         pred = model(X)
-        loss = loss_fn(pred, y)
+        loss: torch.Tensor = loss_fn(pred, y)
 
         # Backpropagation
         loss.backward()
